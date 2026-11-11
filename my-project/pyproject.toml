@@ -15,3 +15,9 @@ my-project = "my_project:main"
 [build-system]
 requires = ["uv_build>=0.13.7,<0.14.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "basedpyright>=1.40.2",
+    "jupyterlab-lsp>=5.3.0",
+]
